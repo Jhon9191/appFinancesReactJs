@@ -7,10 +7,9 @@ const Header = () => {
     return (
         <div className={styles.container}>
             <div>
-                <div>
-                    <VscListFlat color="#FFF" size="70%"  />
-                </div>
+                {/*logo*/}
             </div>
+            <VscListFlat color="#FFF" size={40} />
         </div>
     );
 }

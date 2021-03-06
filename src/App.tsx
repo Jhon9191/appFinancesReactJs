@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import api from './services/api';
-import Header from './Components/Header'
+import Header from './Components/Header/Header'
 
 function App() {
   useEffect(() => {
