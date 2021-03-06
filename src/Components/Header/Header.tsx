@@ -9,7 +9,9 @@ const Header = () => {
             <div>
                 {/*logo*/}
             </div>
-            <VscListFlat color="#FFF" size={40} />
+            <div className={styles.icon}>
+                <VscListFlat color="#FFF" size={40} />
+            </div>
         </div>
     );
 }
