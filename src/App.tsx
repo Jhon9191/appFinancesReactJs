@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import api from './services/api';
+import Header from './Components/Header'
 
 function App() {
-  
   useEffect(() => {
    async function teste(){
     await api.get("billingCycles").then((response)=>{
@@ -15,11 +15,9 @@ function App() {
   }, []);
 
   return (
-
-    <div className="App">
-      <h1>oi</h1>
-    </div>
-
+    <div>
+      <Header/>
+    </div>  
   );
 }
 
