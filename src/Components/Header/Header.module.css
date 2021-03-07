@@ -7,14 +7,7 @@
     min-height: 30px;
     height: 60px;
     background-color: var(--backgroundMain);
-}.container div:first-child{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 20%;
-    min-width: 20%;
-    height: 100%;
-    background-color: #19202e
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.5);
 }
 .icon{
     margin-left: 20px;
