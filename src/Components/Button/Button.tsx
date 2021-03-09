@@ -4,8 +4,8 @@ const Button = () =>{
     return(
         <div className={styles.container}>
         <button className={styles.botao1}></button>
-        <button className={styles.botao1}></button>
-        <button className={styles.botao1}></button>
+        <button className={styles.botao2}></button>
+        <button className={styles.botao3}></button>
         </div>
     );
 }
