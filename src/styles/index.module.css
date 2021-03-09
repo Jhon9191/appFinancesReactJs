@@ -1,6 +1,7 @@
 .container{
     background-color: var(--title);
     display: flex;
-    width: 100%;
+    flex: 1;
+    height: 100vh;
     flex-direction: row;
 }
