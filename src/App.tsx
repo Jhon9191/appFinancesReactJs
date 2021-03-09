@@ -22,17 +22,11 @@ function App() {
   }, []);
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: "column",
-      height: '100%',
-      width: '100%',
-      flex: 1
-    }}>
+    <div className={styles.container}>
       <Header />
-      <div style={{ display: 'flex', flexDirection: "row", height: '100vh', width: '100%', }}>
+      <div className={styles.subContainer}>
         <Menu />
-        <div style={{display: 'flex', backgroundColor: "#000", flexDirection: "column", height: '100%', width: '100%'}}>
+        <div className={styles.main}>
            
         <Button/>
          

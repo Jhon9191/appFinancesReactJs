@@ -1,7 +1,22 @@
-.container{
-    background-color: var(--title);
+.container {
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
     flex: 1;
-    height: 100vh;
+}
+
+.subContainer {
+    display: flex;
     flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    background-color: #2e374d;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
