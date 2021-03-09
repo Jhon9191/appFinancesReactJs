@@ -16,5 +16,9 @@
     box-shadow: 7px 7px 7px rgba(44, 44, 44, 0.5);
     margin-bottom: 2px;
 }.menuItem small{
+    font-weight: bold;
     margin-left: 5px;
+}.menuItem:hover{
+background-color: #43516d;
+padding: 10px;
 }
