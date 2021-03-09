@@ -7,8 +7,7 @@
 
 .botao1{
     background-color: var(--yellow);
-    width: 30%; 
-    min-width: 30px; 
+    width: 30%;  
     height: 70px;
     min-height: 30px;
     padding: 5px;
