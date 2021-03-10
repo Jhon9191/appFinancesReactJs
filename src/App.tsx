@@ -4,7 +4,8 @@ import api from './services/api';
 import Header from './Components/Header/Header'
 import Menu from './Components/Menu/Menu'
 import Footer from './Components/Footer/Footer'
-import Button from './Components/Button/Button'
+
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 import styles from './styles/index.module.css'
 
@@ -27,9 +28,7 @@ function App() {
       <div className={styles.subContainer}>
         <Menu />
         <div className={styles.main}>
-           
-        <Button/>
-         
+         <Dashboard/>
         </div>
       </div>
       <Footer />
