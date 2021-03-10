@@ -15,9 +15,9 @@ export const Contexto =  createContext({} as dataContext);
 export function ContextProvider( { children } : providerProps ){
     
     const taggleMenu = () =>{
-        if(variavel == 5){
+        if(variavel === 5){
             setVariavel(20)
-        }else if(variavel == 20){
+        }else if(variavel === 20){
             setVariavel(5)
         }
     }
