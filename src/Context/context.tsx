@@ -6,8 +6,10 @@ interface providerProps{
 }
 
 interface dataContext{
-    variavel: number;
+    variavel: Number;
     taggleMenu: () => void;
+    navegate: Function;
+    navegation: Number
 }
 
 export const Contexto =  createContext({} as dataContext);
@@ -21,13 +23,24 @@ export function ContextProvider( { children } : providerProps ){
             setVariavel(5)
         }
     }
-
     const [variavel, setVariavel] = useState(20);
     
+    const[navegation, setNavegation] = useState(1)
+
+    const navegate=(valor : number)=>{
+        if(valor === 1){
+            setNavegation(1)
+        }else if(valor === 2){
+            setNavegation(2)
+        }
+    }
+
     return(
         <Contexto.Provider value={{
             variavel,
-            taggleMenu
+            taggleMenu,
+            navegate,
+            navegation
         }}>
             {children}
         </Contexto.Provider>

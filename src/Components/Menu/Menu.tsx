@@ -5,14 +5,14 @@ import { VscDashboard } from 'react-icons/vsc'
 import { AiFillDollarCircle } from "react-icons/ai";
 
 const Menu = () => {
-    const { variavel } = useContext(Contexto)
+    const { variavel, navegate } = useContext(Contexto)
     return (
         <div className={styles.menu} style={{ width: `${variavel}%` }}>
-            <div className={styles.menuItem}>
+            <div className={styles.menuItem} onClick={()=>navegate(1)}>
                     <VscDashboard color="#FFF" size={30} />
                     <small>Dashboard</small>
             </div>
-            <div className={styles.menuItem}>
+            <div className={styles.menuItem} onClick={()=>navegate(2)}>
                     <AiFillDollarCircle color="#FFF" size={30} />
                     <small>BillyngCycles</small>
             </div>

@@ -9,12 +9,13 @@ import Dashboard from './Pages/Dashboard/Dashboard';
 import Bc from './Pages/BillyngCycles/BillyngCycles'
 
 import styles from './styles/index.module.css'
+import { Contexto } from './Context/context';
 
 function App() {
-
+const { navegation } = useContext(Contexto)
+  
   useEffect(()=>{
-
-  },[])
+  },[navegation])
 
   useEffect(() => {
     async function teste() {
@@ -33,7 +34,9 @@ function App() {
       <div className={styles.subContainer}>
         <Menu />
         <div className={styles.main}>
-        
+        {navegation === 1 ? (<Dashboard/>)
+        :
+        (<Bc/>)}
         </div>
       </div>
       <Footer />
