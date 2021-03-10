@@ -1,11 +1,10 @@
 .footer{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: center;
     width: 100%;
     min-height: 30px;
     height: 60px;
-    background-color: var(--backgroundMain);
+    background-color: #1e273d;
 }
 
